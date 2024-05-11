@@ -1,0 +1,7 @@
+{
+	"trip" :{
+		"feature_name": "trip",
+		"qml": "./trip.qml",
+		"icon":"./trip"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"ranges" :{
+		"feature_name": "ranges",
+		"qml": "./ranges.qml",
+		"icon":"./ranges"
+	}
+}

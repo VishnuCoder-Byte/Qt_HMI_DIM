@@ -1,0 +1,5 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/IC_View">
+<file alias="main.qml">/home/vishnu/qtRepo/Qt_HMI_DIM/qtApplication/IC_View/main.qml</file>
+</qresource>
+</RCC>

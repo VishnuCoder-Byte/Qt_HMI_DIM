@@ -1,0 +1,7 @@
+{
+	"navigation" :{
+		"feature_name": "navigation",
+		"qml": "./navigation.qml",
+		"icon":"./navigation"
+	}
+}
