@@ -11,6 +11,7 @@
 #include <QFileSystemWatcher>
 #include <QList>
 #include <QDebug>
+#include <QRegularExpression>
 
 class SubscriptionManager : public QObject
 {
@@ -26,6 +27,7 @@ private:
     QDir* dir;
     QStringList filenames;
     QString filepath;
+    QRegularExpression jsonFileRegex;
 
 
 public slots:

@@ -1,14 +1,15 @@
 #include "subscriptionmanager.h"
 
 SubscriptionManager::SubscriptionManager(QObject *parent)
-    : QObject{parent},filepath("./subscription/")
+    : QObject{parent},filepath("./subscription")
 {
     watcher = new QFileSystemWatcher(this);
     watcher->addPath(filepath);
 
-    connect(watcher,&QFileSystemWatcher::directoryChanged,
+    jsonFileRegex = QRegularExpression(".*\\.json$", QRegularExpression::CaseInsensitiveOption);
+
+    connect(watcher,&QFileSystemWatcher::fileChanged,
             this,&SubscriptionManager::onFileUpdated);
-    //readJson();
 }
 
 void SubscriptionManager::readJson()
@@ -34,12 +35,16 @@ void SubscriptionManager::readJson()
 void SubscriptionManager::onFileUpdated(const QString &fileName)
 {
     qDebug()<< "File updated"<<fileName;
+    if (jsonFileRegex.match(fileName).hasMatch()) {
+
+        qDebug()<<fileName;
+    }
 //    if(watcher->files().contains(filepath))
-    if(QFile::exists(filepath))
+    /*if(QFile::exists(filepath))
     {
         watcher->addPath(filepath);
         readJson();
 
-    }
+    }*/
 
 }

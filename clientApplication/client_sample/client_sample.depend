@@ -1,0 +1,116 @@
+# depslib dependency file v1.0
+1716036781 source:/home/vishnu/qtRepo/Qt_HMI_DIM/clientApplication/client_sample/main.cpp
+	<iostream>
+	<client_sample.h>
+
+1716037597 /home/vishnu/qtRepo/Qt_HMI_DIM/clientApplication/client_sample/include/client_sample.h
+	<iostream>
+	<vsomeip/vsomeip.hpp>
+	<chrono>
+	<thread>
+	<mutex>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/vsomeip.hpp
+	<vsomeip/constants.hpp>
+	<vsomeip/defines.hpp>
+	<vsomeip/application.hpp>
+	<vsomeip/message.hpp>
+	<vsomeip/payload.hpp>
+	<vsomeip/runtime.hpp>
+	<vsomeip/trace.hpp>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/constants.hpp
+	<string>
+	<vsomeip/primitive_types.hpp>
+	<vsomeip/enumeration_types.hpp>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/primitive_types.hpp
+	<array>
+	<cstdint>
+	<string>
+	<sys/types.h>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/enumeration_types.hpp
+	<cstdint>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/defines.hpp
+	<cstddef>
+	<cstdint>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/application.hpp
+	<chrono>
+	<memory>
+	<set>
+	<map>
+	<vector>
+	<vsomeip/deprecated.hpp>
+	<vsomeip/primitive_types.hpp>
+	<vsomeip/enumeration_types.hpp>
+	<vsomeip/structured_types.hpp>
+	<vsomeip/function_types.hpp>
+	<vsomeip/constants.hpp>
+	<vsomeip/handler.hpp>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/deprecated.hpp
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/structured_types.hpp
+	<chrono>
+	<map>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/function_types.hpp
+	<functional>
+	<memory>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/handler.hpp
+	<functional>
+	<memory>
+	<tuple>
+	<vsomeip/deprecated.hpp>
+	<vsomeip/primitive_types.hpp>
+	<vsomeip/vsomeip_sec.h>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/vsomeip_sec.h
+	<stdint.h>
+	<sys/types.h>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/message.hpp
+	<memory>
+	<vsomeip/deprecated.hpp>
+	<vsomeip/message_base.hpp>
+	<vsomeip/vsomeip_sec.h>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/message_base.hpp
+	<vsomeip/export.hpp>
+	<vsomeip/primitive_types.hpp>
+	<vsomeip/enumeration_types.hpp>
+	<vsomeip/internal/deserializable.hpp>
+	<vsomeip/internal/serializable.hpp>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/export.hpp
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/internal/deserializable.hpp
+	<vsomeip/export.hpp>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/internal/serializable.hpp
+	<vsomeip/export.hpp>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/payload.hpp
+	<vector>
+	<vsomeip/export.hpp>
+	<vsomeip/primitive_types.hpp>
+	<vsomeip/internal/deserializable.hpp>
+	<vsomeip/internal/serializable.hpp>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/runtime.hpp
+	<memory>
+	<string>
+	<vector>
+	<vsomeip/export.hpp>
+	<vsomeip/primitive_types.hpp>
+
+1712744607 /home/vishnu/qtRepo/Qt_HMI_DIM/dependencies//vsomeip/trace.hpp
+	<memory>
+	<vector>
+	<vsomeip/constants.hpp>
+	<vsomeip/primitive_types.hpp>
+
