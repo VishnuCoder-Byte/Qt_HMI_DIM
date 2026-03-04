@@ -1,0 +1,29 @@
+cmake .. \
+  -G Ninja \
+  -DCMAKE_TOOLCHAIN_FILE=../tool.cmake \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DQT_QMAKE_TARGET_MKSPEC=qnx-aarch64le-qcc \
+  -DQT_FEATURE_xcb=OFF \
+  -DQT_FEATURE_wayland=OFF \
+  -DQT_FEATURE_opengl=es2 \
+  -DQT_BUILD_EXAMPLES=OFF \
+  -DQT_BUILD_TESTS=OFF \
+  -DQT_HOST_PATH=~/qt6-host \
+  -DQT_HOST_PATH_CMAKE_DIR=~/qt6-host/lib/cmake
+  
+  
+Solution: Bootstrap Host Qt Build
+
+Qt provides a helper for building host Qt tools first:
+
+Create a separate build folder for host Qt:
+
+mkdir -p ~/qt6-host-build
+cd ~/qt6-host-build
+
+Configure host Qt build:
+
+cmake ~/qnx800/qt6/qtbase \
+  -G Ninja \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_INSTALL_PREFIX=~/qt6-host
